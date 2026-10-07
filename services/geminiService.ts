@@ -126,8 +126,7 @@ export const generateContentPlan = async (
         contents: { parts: [{ text: promptText }] },
         config: {
           systemInstruction: CONTENT_PLANNER_SYSTEM_PROMPT,
-          responseMimeType: "application/json",
-          thinkingConfig: { thinkingBudget: API_CONFIG.THINKING_BUDGET }
+          responseMimeType: "application/json"
         }
       });
     }, API_CONFIG.MAX_RETRIES, API_CONFIG.INITIAL_DELAY);
@@ -314,8 +313,7 @@ export const generateMarketAnalysis = async (
         contents: { parts: parts },
         config: {
           systemInstruction: MARKET_ANALYST_SYSTEM_PROMPT,
-          responseMimeType: "application/json",
-          thinkingConfig: { thinkingBudget: API_CONFIG.THINKING_BUDGET }
+          responseMimeType: "application/json"
         }
       });
     }, API_CONFIG.MAX_RETRIES, API_CONFIG.INITIAL_DELAY);
@@ -372,8 +370,7 @@ export const generateContentStrategy = async (
         contents: { parts: [{ text: promptText }] },
         config: {
           systemInstruction: CONTENT_STRATEGIST_SYSTEM_PROMPT,
-          responseMimeType: "application/json",
-          thinkingConfig: { thinkingBudget: API_CONFIG.THINKING_BUDGET }
+          responseMimeType: "application/json"
         }
       });
     }, API_CONFIG.MAX_RETRIES, API_CONFIG.INITIAL_DELAY);
